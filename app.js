@@ -63,4 +63,85 @@
 
 // for const e.g objects CNIC etc 
 
+// -------------------------ARROW FUNCTION 
+// arrow functions are same as function but it came out in es6 update
+// whats the difference then?? 
+// syntax and this keyword
+
+
+// SYNTAX 
+
+// -------------- normal function :
+
+// function foo(){
+//     console.log("this is a normal function ");
+// }
+// foo()
+
+// ------------ now arrow function syntax 
+
+// const foo = () => {
+//     console.log("THis is an arrow function ");
+// }
+
+// if we dont have any parameters and arguments and now that we dont need that in that function we do this in arrow function 
+// it is known as Dummy variable  ( means it wont exist and wont be usable in future aswell it is a standard )
+// E.G
+
+
+// const dummyvariablefunction = _ => {
+//     console.log("this is a arrow function with dummy variable");
+// }
+// dummyvariablefunction()
+
+// *OR WE CAN USE NORMAL ARROW FUNCTION 
+
+
+// *we pass argument and parameter in same paranthesis way 
+
+
+// *Arrow Function inside object (aka method )
+
+// const obj = {
+//     foo:_ =>{
+//         console.log("this is an arrow function with dummy variable inside object");
+//     }
+// }
+
+// obj.foo()
+
+
+// WE KNOW THAT FOR GIVING FUCTION THE VALUE WE USE PARAMETER AND ARGUMENT 
+// BUT FOR GETTING THE VALUE FROM THE FUNCTION WE USE RETURN
+
+// in normal function that's how we return the value 
+
+// function foo(input){
+//     return input // this is a single line statement with return 
+// }
+
+
+
+// const value = foo(22)
+// console.log(value);
+
+
+// FOR SINGLE LINE STATEMENT AND RETURN VALUE WE DO THIS IN ARROW FUNCTION 
+
+// const foo = (value) => value // we dont have to use return and {} in single line statement in arrow function note that array and object are single line aswell
+
+// const singleLineReturn = foo(44)
+
+// console.log(singleLineReturn);
+
+
+
+
+
+
+
+
+
+
+
 
