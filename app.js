@@ -269,13 +269,55 @@
 
 // ------------------------------------X ---------------------------------------- X---------------------X 
 
+// SOME NEW ARRAY METHODS IN ADVANCE JS  
+
+// to find value or anything inside of an array we created an algorithm with long ass code 
+
+// now we can use array find method 
+
+// thats how we create search algorithm 
+
+
+// Syntax 
+
+
+// const arr = ["Pakistan","portugal","indonesia","japan","india"]
+// let userInput = prompt("ENTER THE VALUE")
+
+// const value  = arr.find((value,index,array)=>{
+//     if(userInput == value){
+//         console.log(value ,`is at ${index}` );
+//         return true
+//     }
+    // console.log(value); // it will give the value i.e Pakistan
+    // console.log(index); // it will give u the index of that value i.e 0
+    // console.log(array);// it will give u the whole array i.e arr = ["Pakistan","portugal","indonesia","japan","india"]
+// })
 
 
 
+// WE must create an function inside that array method with parameters value index and array even if we don't use array its fine to not use it 
 
 
 
+// -----------------------------------------X ------------------------------------ X---------------------
 
+
+// ANOTHER ARRAY METHOD SIMILAR TO ARRAY.FIND we have Array.find index 
+
+
+// SYNTAX (same as array.find method )
+
+const arr = [10,20,30,40,50,60,70,80,90]
+let userInput = +prompt("Enter the index")
+
+const indexNum = arr.findIndex((value,index,array)=>{
+if(index == userInput){
+    console.log(value,index,array);
+    // return true
+}
+
+})
 
 
 
