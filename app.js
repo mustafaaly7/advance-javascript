@@ -398,26 +398,70 @@
 
 
 
+// Syntax 
+
+// for single value 
+
+
+
+// const arr =[1,2,3,4,5,6,7,8,9]
+// const arr2 = arr.filter((value,index,array) =>{
+//     if(value == 2){
+//         return value
+//     }
+// })
+
+// console.log(arr2);
+
+
+
+// imagine if there's multiple same values  
+// we can filter all of them with filter 
+
+const arr = [1,2,1,4,5,1]  // now there's multiple 1
+
+// const arr2 =arr.filter((value,index,array)=>{ //node that value index and array are parameter they can be anything 
+//     if(value == 1){
+//         return value
+//     }
+// })
+
+
+// console.log(arr2); // will store all the 1
+
+// what if we return true 
 
 
 
 
+// const arr2 = arr.filter((value,index,array)=>{
+
+//     return true
+// })
+
+// console.log(arr2); // it will store the original array 
 
 
+// what if we return false 
 
 
+// const arr2 = arr.filter((value,index,array)=>{
+//   return false  
+// })
+
+// console.log(arr2); //  it will return empty array 
 
 
+// What if we dont return anything 
 
 
+// const arr2 = arr.filter((value,index,array)=>{
+    
+// })
 
+// console.log(arr2); // it will return empty array aswell 
 
-
-
-
-
-
-
+// -----------------------------------X -----------------------------X 
 
 
 
