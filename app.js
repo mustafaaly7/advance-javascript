@@ -308,16 +308,127 @@
 
 // SYNTAX (same as array.find method )
 
-const arr = [10,20,30,40,50,60,70,80,90]
-let userInput = +prompt("Enter the index")
+// const arr = [10,20,30,40,50,60,70,80,90]
+// let userInput = +prompt("Enter the index")
 
-const indexNum = arr.findIndex((value,index,array)=>{
-if(index == userInput){
-    console.log(value,index,array);
-    // return true
-}
+// const indexNum = arr.findIndex((value,index,array)=>{
+// if(index == userInput){
+//     console.log(value,index,array);
+//     // return true
+// }
 
-})
+// })
+// --------------------X 
+
+// Dated 6-july - 2024 
+
+
+// MORE ARRAY Methods 
+
+
+// Map  Method 
+
+// It is used to update the previous  array values and store it in new array (most important )
+// it makes a new array 
+//  Syntax 
+
+// const arr = [10,20,30,40,50]
+
+// const arr2 = arr.map((value,index,array) =>{
+//     return value *2
+// })
+
+// console.log(arr2);
+
+
+
+// what if we return true or false ? 
+// if we return true it will store all the values of that array as true and if we return false it will store the value as false 
+// and if we dont return anything it will store undefined $
+// Note that it will always have the same length as the original array  and it will always return array 
+
+// FOR TRUE RETURN 
+
+// const arr2 = arr.map((value,index,array) =>{
+//     return true
+// })
+
+// console.log(arr2);
+
+
+
+// FOR FALSE 
+
+
+
+// const arr2 = arr.map((value,index,array) =>{
+//     return false
+// })
+
+// console.log(arr2);
+
+
+
+
+
+// For not return anything (it will store undefined )
+
+
+// const arr2 = arr.map((value,index,array) =>{
+    
+// })
+
+// console.log(arr2);
+
+
+// --------------------X 
+
+// Array method Array.filter 
+
+
+// Array filter 
+// it is used to filter out the values from one array to another 
+// what's the difference between find and filter 
+// for single value we use find for multiple values we use filter 
+// filter always return array 
+
+
+// if we return true it will store the original array 
+// if we dont return anything it will store empty array 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
