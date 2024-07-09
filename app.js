@@ -455,29 +455,139 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 // What if we dont return anything 
 
 
-// const arr2 = arr.filter((value,index,array)=>{
+// const arr2 = arr.filter((value,index,array)=>{ // arr.filter  is high order function and that arrow function is callback function 
     
 // })
 
 // console.log(arr2); // it will return empty array aswell 
 
+// callback function is the function that is inside a function's or method's parameter and isn't store in a variable or global 
+// and the function that has callback function is called high order function 
+
+
 // -----------------------------------X -----------------------------X 
 
+// dated 8-july 2024 
+
+// Theory :
+// Javascript work as synchroniz means line by line read krna and ksi ka wait nh krna 
+// what is asynchroniz ?
+
+// asynchroniz is to wait for the code to execute in order to go ahead 
+// means woh code complete hoga tou aiga jaiga code wrna ruk jaiga 
+
+// imagine if there's a login request that will take time cuz backend pr request jaigi then aigi so javascript by default synchroniz kaam krti hai tou woh usko ignore krdegi 
+// for that we have to make our js asynchroniz 
+
+// we've three ways to make our js asynchroniz 
+
+// 1. promise 
+// a .fetch() 
+// 2. async await 
+// 3. callback function 
+
+//  by those three we can make our js dynamically asynchroniz 
+// we also learned set timeout but it wasnt dynamic but make that specific code asynchroniz 
+// ------------------------ X -----------------X 
+
+
+// Promise 
+
+
+// syntax  
+// with new keyword and first Alphabet capital means Promise is a constructor 
+// it takes 2 parameter in paranthesis and both of them are functions 
+// const myPromise = new Promise((resolve,reject)=>{
+// const condition = false ;
+// if(condition){
+//     resolve(" if the promise happens, whatever will be written inside resolve will be show in .then() method ")
+// }else{
+//     reject("if the promise failed to happen, whatever written in reject method will be shown thru catch() method")
+// }
+
+
+// })
+// // now we handle the promise via 2 methods if it happens means resolve we use .then()
+// // if didnt happen we use .catch() 
+// // now there's two ways to use that 
+// // 1. after the promise constructor ending bracket or myPromise.catch( ) or my promise
+
+// .then(success =>{ // it takes one parameter in paranthesis
+//     console.log(success); // success will show whatever is written in resolve 
+// })
+
+// myPromise.catch(error => { // it takes a single parameter which will store the reject 
+//     console.log("error" , error); // error will show whatever is inside reject methods bracket 
+// })
+// .then()
+
+
+
+// ---------------------------X ------------------------------- X -------------------------------------- X 
+
+// fetch() // much easier than promise  
+
+
+// syntax 
+
+// const myPromise = fetch(/*it takes url fake api */ "https://fakestoreapi.com/products")
+
+// // we use then and catch to handle resolve and reject 
+// myPromise.then(success =>{
+//     console.log(success,"success");
+// })
+// myPromise.catch(error=>{
+//     console.log(error ,"error");
+// })
+
+
+
+// rightnow it is not in readable form 
+// to make it readable we have another .then() that can convert it into json format 
+
+//  syntax 
+
+
+
+// fetch("https://fakestoreapi.com/products")
+// .then(data => data.json())
+// .then(success =>{
+//     console.log(success);
+// })
+// .catch(error =>{
+//     console.log(error);
+// })
+
+
+// can we render it all into UI  ? 
+
+
+// yes we can 
+// how to do it  
+// check HTML 
+
+fetch("https://fakestoreapi.com/products")
+.then(data => data.json())
+.then(success =>{
+    console.log(success);
+    renderUi(success)
+})
+.catch(error=>{
+    console.log(error ,"error 404");
+
+})
+
+const renderUi = items =>{
+    const parent =document.getElementById("parent")
+    for(var products of items)
+parent.innerHTML += `<div class="card lg-3 px-3 py-3" style="width: 18rem;">
+                <img src=${products.image} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${products.title}</h5>
+                    <p class="card-text">${products.description}</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>`
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
