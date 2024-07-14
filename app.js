@@ -637,24 +637,39 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 
 // ---------------------------------X --------------------------------------X --------------------------------X ---------------X 
 
+// REST PARAMETERS 
+
+// imagine u make a function with some parameters to store arguments but not sure how many arguments you gonna recieve
+// so u use rest parameters ...rest 
+
+// Rest parameters allow us to represent an indefinite number of arguments as an array. 
+// This is handy when you're not sure how many arguments a function will receive:
+// it stores the remaining arguments in an array to not waste the remaining arguments value 
+
+// SYNTAX 
 
 
+// const foo = (firstName , lastName,  ...rest )=>{
+// console.log(firstName , lastName, rest); // we call rest by rest but in parameter we use ...rest & it acts as an array
+
+// }
+
+// foo("Muhammad" , "Mustafa" , 22 , "pakistani", "muslim") // now normally we only can save two value's right? but with rest we can save all the value in array
 
 
+// DEFAULT PARAMETERS 
+
+// to give default values to your parameters in case you dont recieve any value in argument 
+// if we give the default parameter and it give the value on argument the argument value will overwrite the default's value 
+
+// SYNTAX 
 
 
+// const foo = (val1 = 10 , val2=20) =>{
+// console.log(val1,val2); // now 69 will overwrite 10 since we gave the value but val2 value remains the same cuz we didnt give any value to it 
 
-
-
-
-
-
-
-
-
-
-
-
+// }
+// foo(69)
 
 
 
