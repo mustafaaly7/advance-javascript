@@ -566,28 +566,68 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 // how to do it  
 // check HTML 
 
-fetch("https://fakestoreapi.com/products")
-.then(data => data.json())
-.then(success =>{
-    console.log(success);
-    renderUi(success)
-})
-.catch(error=>{
-    console.log(error ,"error 404");
+// fetch("https://fakestoreapi.com/products")
+// .then(data => data.json())
+// .then(success =>{
+//     console.log(success);
+//     renderUi(success)
+// })
+// .catch(error=>{
+//     console.log(error ,"error 404");
 
-})
+// })
 
-const renderUi = items =>{
-    const parent =document.getElementById("parent")
-    for(var products of items)
-parent.innerHTML += `<div class="card lg-3 px-3 py-3" style="width: 18rem;">
-                <img src=${products.image} class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">${products.title}</h5>
-                    <p class="card-text">${products.description}</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>`
-
-
+// const renderUi = items =>{
+//     const parent =document.getElementById("parent")
+//     for(var products of items)
+// parent.innerHTML += `<div class="card lg-3 px-3 py-3" style="width: 18rem;">
+//                 <img src=${products.image} class="card-img-top" alt="...">
+//                 <div class="card-body">
+//                     <h5 class="card-title">${products.title}</h5>
+//                     <p class="card-text">${products.description}</p>
+//                     <a href="#" class="btn btn-primary">Buy Now</a>`
 
 
-}
+
+
+// }
+
+
+// async await 
+// it also makes the function asynchroniz 
+// whats the difference between async and promise ?
+// nothing literally nothing just syntax and that's it  
+// it has try and catch which won't let the app crash 
+
+
+// const foo = async () =>{
+//     try{
+//         const foo2 = await fetch("https://fakestoreapi.com/prducts").then(data => data.json())
+//         console.log(foo2,"foo2");
+//          // Render UI function can be implemented here
+//     }
+//     catch(error){
+//         console.log("error 404", error ); // now it wont crash your app incase the await function wont works means try 
+//     }
+// }
+// foo()
+
+
+// ---------------------------X ---------------------------- X-------------------------- X --------------
+
+//  DATED : 13-7-2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
