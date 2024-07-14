@@ -617,6 +617,37 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 
 //  DATED : 13-7-2024
 
+// some array and string methods  
+//  how to concat two array and two object ?? 
+
+// we use spread operator also known as three dots (...)
+
+// now string methods 
+
+// const str = "muhammad Mustafa ali"
+// console.log(str.includes("ali")); // will give true or false if it exist in that string 
+// console.log(str.startsWith("m")); // will also give T\F if that string starts with the word or alphabet
+// console.log(str.endsWith("ali")); // will give T\F if that str or array ends with that i.e it will give on true but not on ila means last word or aplhabet check krta hai 
+
+// we can also use include on array and string 
+
+// const array = ["Mustafa", "ali","usman","javed"]
+// console.log(array.includes("ali")); // now here u have to give the whole value means u cant just search it with single alphabet i.e abcd 
+
+
+// ---------------------------------X --------------------------------------X --------------------------------X ---------------X 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
