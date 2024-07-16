@@ -671,6 +671,35 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 // }
 // foo(69)
 
+// --------------------X ---------------------------------- X -------------------------------X ---------------------X 
+
+// NOW IMAGINE IF WE HAVE A big array of object or multiple variables 
+// so creating them on our connected javascript would make the code not readable means code readability khrb krdega 
+// for that we create objects and big variables on other js file then get it on our connected js or any other js file  
+
+// How to do that? 
+
+// by using import export
+// from where we send our js we use export 
+// from where we recieve js code we use import 
+
+
+// we can export single variable or object or multiple aswell 
+// for single object or variable we use default (remember u can only use it one time ) 
+
+// REMEMBER 
+// For importing exporting js code we need to add type ="module" in our script tag in html where our main js is connected 
+
+/* <script src="app.js" type ="module"></script> */
+
+
+
+
+
+// Syntax 
+
+// show in another js file named firebase.js 
+
 
 
 
