@@ -700,6 +700,34 @@ const arr = [1,2,1,4,5,1]  // now there's multiple 1
 
 // show in another js file named firebase.js 
 
+// now to recieve it here we use import 
+// now we need to add type module on my script tag html and run it on live server provided by vscode 
+
+// import mynameFromfirebase from "./firebase.js" //dont forget to add extension
+// console.log(mynameFromfirebase);
+
+
+// import userinfo from "./firebase.js" // we recive here whole object with any name we want with deafult
+// console.log(userinfo);
+// console.log(userinfo.username);
+// console.log(userinfo.age);
+// --------------------------- X ---------------------------------X ------------------------ X 
+
+//Now to recieve multiple values
+
+//  Now to export import multiple variable functions etc all together 
+// we can use both default and multiple export together 
+
+//now to import we have to use the same name as we used in here to declared them and recieve them in obj bracket 
+
+// import {
+//     name,
+//     age,
+//     obj
+// } from "./firebase.js"
+
+// console.log(name , age ,obj.profession); // we can access these export variables obj etc in any js file 
+
 
 
 
